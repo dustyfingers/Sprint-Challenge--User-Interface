@@ -304,3 +304,37 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* ABOUT PAGE ONLY STYLES */
+
+.about-card-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 45%;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed black
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.card h2,
+.card p {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.card button {
+    margin-bottom: 1rem;
+}
