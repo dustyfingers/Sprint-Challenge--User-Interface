@@ -3,63 +3,160 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-size: 18px;
     margin-bottom: 15px;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 p {
@@ -67,13 +164,40 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+}
+
+.header-nav {
+    margin-bottom: 2.5rem;
+}
+
+.header-nav,
+.header-nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.header-nav-list {
+    width: 70%;
+}
+
+.header-nav-list li a:hover {
+    transition: 0.4s color ease-out;
+    color: darkgray;
+}
+
+.header-img {
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 .top-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -82,7 +206,11 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+}
+
+.about-text-container {
+    margin-bottom: 1rem;
 }
 
 .middle-content {
@@ -104,12 +232,51 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box1 {
+    background-color: teal;
+}
+
+.box2 {
+    background-color: gold;
+}
+
+.box3 {
+    background-color: cadetblue;
+}
+
+.box4 {
+    background-color: coral;
+}
+
+.box5 {
+    background-color: crimson;
+}
+
+.box6 {
+    background-color: forestgreen;
+}
+
+.box7 {
+    background-color: darkorchid;
+}
+
+.box8 {
+    background-color: hotpink;
+}
+
+.box9 {
+    background-color: indigo;
+}
+
+.box10 {
+    background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +310,117 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* ABOUT PAGE ONLY STYLES */
+
+.about-middle-content {
+    border: none;
+}
+
+.about-card-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.card {
+    width: 45%;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    border-bottom: 1px dashed black
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.card h2,
+.card p {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.card button {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+}
+
+.card button:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    transition: 0.2s border ease-in, 0.4s background-color ease-in-out, 0.4s color ease-in-out;
+}
+
+.about-bottom-content {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+}
+
+/* responsive stuff!! */ 
+@media all and (max-width: 700px) { 
+    /* NAV TO COLUMN */
+    .header-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .header-nav-list {
+        width: 90%;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+} 
+@media all and (max-width: 380px) { 
+    .container {
+        width: 90%;
+    }
+
+    .header-nav {
+        margin-bottom: 0.5rem;
+    }
+
+    .header-nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-nav-list li {
+        margin-bottom: 0.5rem;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+    
+    .top-content .text-container {
+        width: 90%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
