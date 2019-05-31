@@ -193,7 +193,6 @@ p {
 
 .top-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -368,13 +367,48 @@ footer nav a {
 
     .header-nav-list {
         width: 90%;
-
     }
 
     .logo {
         margin-bottom: 1rem;
     }
 } 
-@media all and (max-width: 450px) { 
+@media all and (max-width: 380px) { 
+    .container {
+        width: 90%;
+    }
+
+    .header-nav {
+        margin-bottom: 0.5rem;
+    }
+
+    .header-nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-nav-list li {
+        margin-bottom: 0.5rem;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
     
+    .top-content .text-container {
+        width: 90%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .bottom-content .text-container {
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
