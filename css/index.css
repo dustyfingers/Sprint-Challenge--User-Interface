@@ -186,6 +186,11 @@ p {
     width: 70%;
 }
 
+.header-nav-list li a:hover {
+    transition: 0.4s color ease-out;
+    color: darkgray;
+}
+
 .header-img {
     margin-bottom: 1rem;
     width: 100%;
@@ -347,6 +352,13 @@ footer nav a {
     border-radius: 8px;
     padding: 0.5rem 1rem;
     border: 2px solid black;
+}
+
+.card button:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    transition: 0.2s border ease-in, 0.4s background-color ease-in-out, 0.4s color ease-in-out;
 }
 
 .about-bottom-content {
