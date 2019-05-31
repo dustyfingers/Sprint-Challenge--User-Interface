@@ -307,6 +307,10 @@ footer nav a {
 
 /* ABOUT PAGE ONLY STYLES */
 
+.about-middle-content {
+    border: none;
+}
+
 .about-card-gallery {
     display: flex;
     flex-direction: row;
@@ -314,13 +318,12 @@ footer nav a {
     margin: 0 auto;
     justify-content: space-around;
     margin-top: 2rem;
-    margin-bottom: 1rem;
 }
 
 .card {
     width: 45%;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     border-bottom: 1px dashed black
 }
 
@@ -337,4 +340,15 @@ footer nav a {
 
 .card button {
     margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+}
+
+.about-bottom-content {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
 }
