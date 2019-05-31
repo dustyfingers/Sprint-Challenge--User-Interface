@@ -23,6 +23,11 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -69,6 +74,26 @@ p {
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.header-nav {
+    margin-bottom: 2.5rem;
+}
+
+.header-nav,
+.header-nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.header-nav-list {
+    width: 70%;
+}
+
+.header-img {
+    margin-bottom: 1rem;
 }
 
 .top-content {
